@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendaftaran - SMK Pelita</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-600">SMK Pelita</h1>
+      <ul class="hidden md:flex gap-6">
+        <li><a href="index.html" class="hover:text-indigo-600">Beranda</a></li>
+        <li><a href="profil.html" class="hover:text-indigo-600">Profil</a></li>
+        <li><a href="visi-misi.html" class="hover:text-indigo-600">Visi & Misi</a></li>
+        <li><a href="pendaftaran.html" class="text-indigo-700 font-semibold">Pendaftaran</a></li>
+        <li><a href="jurusan.html" class="hover:text-indigo-600">Jurusan</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Formulir Pendaftaran -->
+  <section class="py-16 bg-indigo-50">
+    <div class="max-w-lg mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center text-indigo-700 mb-8">Formulir Pendaftaran</h2>
+      <div class="bg-white shadow-lg rounded-lg p-8">
+        <form action="#" method="POST" class="space-y-5">
+          <div>
+            <label for="name" class="block text-lg mb-1">Nama Lengkap</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 rounded-md border border-gray-300" required>
+          </div>
+          <div>
+            <label for="phone" class="block text-lg mb-1">Nomor Telepon</label>
+            <input type="text" id="phone" name="phone" class="w-full px-4 py-2 rounded-md border border-gray-300" required>
+          </div>
+          <div>
+            <label for="email" class="block text-lg mb-1">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-md border border-gray-300" required>
+          </div>
+          <div>
+            <label for="course" class="block text-lg mb-1">Jurusan yang Dipilih</label>
+            <select id="course" name="course" class="w-full px-4 py-2 rounded-md border border-gray-300" required>
+              <option value="">-- Pilih Jurusan --</option>
+              <option value="RPL">Rekayasa Perangkat Lunak</option>
+              <option value="TKJ">Teknik Komputer dan Jaringan</option>
+              <option value="Multimedia">Multimedia</option>
+              <option value="Tata Busana">Tata Busana</option>
+              <option value="Akuntansi">Akuntansi</option>
+            </select>
+          </div>
+          <button type="submit" class="w-full py-3 bg-indigo-600 text-white font-semibold rounded-md hover:bg-indigo-700 transition">Daftar Sekarang</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigo-600 text-white py-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <p>&copy; 2025 SMK Pelita. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
